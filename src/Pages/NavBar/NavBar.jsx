@@ -68,6 +68,20 @@ const Navbar = () => {
             SumNumber
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/Tabs"
+            className={({ isActive }) =>
+              `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
+                isActive
+                  ? "text-yellow-400 scale-105"
+                  : "hover:text-yellow-400 hover:scale-105"
+              }`
+            }
+          >
+            Tabs
+          </NavLink>
+        </li>
       </ul>
 
       {/* Mobile Menu */}
@@ -135,6 +149,20 @@ const Navbar = () => {
             }
           >
             NameFilter
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Tabs"
+            className={({ isActive }) =>
+              `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
+                isActive
+                  ? "text-yellow-400 scale-105"
+                  : "hover:text-yellow-400 hover:scale-105"
+              }`
+            }
+          >
+            Tabs
           </NavLink>
         </li>
           </ul>

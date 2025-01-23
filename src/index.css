@@ -41,3 +41,59 @@
 .animate-slide-in {
     animation: slide-in 0.5s ease-in-out forwards;
 }
+.tabs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ffffff54;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: color 0.3s, border-color 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    position: relative;
+  }
+  
+  .tab:hover {
+    color: #edfe02;
+  }
+  
+  .tab.active {
+    color: #edfe02;
+    border-bottom: 2px solid #edfe02;
+  }
+  
+  .tab.active::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #edfe02;
+  }
+  
+  .tab-content {
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #0222f3;
+    border-top: none;
+  }
+  

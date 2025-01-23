@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import SumNumberComponent from "../Pages/SumNumberExam/SumNubmerExam";
 import TodoList from "../Pages/TodoList/TodoList";
 import NameFilter from "../Pages/FliterArray/FilterArray";
+import Tabs from "../Pages/Tabs/Tabs";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/SumNumberComponent" element={<SumNumberComponent />} />
           <Route path="/TodoList" element={<TodoList />} />
           <Route path="/NameFilter" element={<NameFilter />} />
+          <Route path="/Tabs" element={<Tabs />} />
         </Routes>
       </div>
     </Router>
