@@ -9,6 +9,10 @@ import Loader from "../Pages/Loader/Loader";
 import UsersList from "../Pages/GetAPi/GetAPIUserList";
 import RegistrationForm from "../Pages/RegisterisionEmail/RegisterisionEmail";
 import ImageGallery from "../Pages/GetGallaryAPI/ImageGallery";
+import Time from "../Pages/Time/Time";
+
+
+
 
 const App = () => {
   return (
@@ -26,6 +30,7 @@ const App = () => {
           <Route path="/UsersList" element={<UsersList />} />
           <Route path="/RegistrationForm" element={<RegistrationForm />} />
           <Route path="/ImageGallery" element={<ImageGallery />} />
+          <Route path="/Time" element={<Time />} />
         </Routes>
       </div>
     </Router>
