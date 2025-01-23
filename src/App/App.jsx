@@ -5,6 +5,8 @@ import SumNumberComponent from "../Pages/SumNumberExam/SumNubmerExam";
 import TodoList from "../Pages/TodoList/TodoList";
 import NameFilter from "../Pages/FliterArray/FilterArray";
 import Tabs from "../Pages/Tabs/Tabs";
+import Loader from "../Pages/Loader/Loader";
+import UsersList from "../Pages/GetAPi/GetAPIUserList";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/TodoList" element={<TodoList />} />
           <Route path="/NameFilter" element={<NameFilter />} />
           <Route path="/Tabs" element={<Tabs />} />
+          <Route path="/Loader" element={<Loader />} />
+          <Route path="/UsersList" element={<UsersList />} />
         </Routes>
       </div>
     </Router>

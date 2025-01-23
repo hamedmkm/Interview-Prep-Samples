@@ -42,17 +42,28 @@
     animation: slide-in 0.5s ease-in-out forwards;
 }
 .tabs-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-  }
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;   
+       /* تنظیم متن به صورت مرکز برای زیبایی بیشتر */
+}
+
   
   .tabs {
     display: flex;
     border-bottom: 2px solid #ffffff54;
     margin-bottom: 20px;
+
+    justify-content: center;   /* مرکز کردن افقی */
+    align-items: center;       /* مرکز کردن عمودی */
+
+    margin: 0;  
   }
   
   .tab {
@@ -64,7 +75,7 @@
     transition: color 0.3s, border-color 0.3s;
     font-size: 16px;
     font-weight: 600;
-    color: #555;
+    color: #ffffff;
     position: relative;
   }
   
