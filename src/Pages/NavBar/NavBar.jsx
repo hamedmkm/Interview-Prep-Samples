@@ -88,13 +88,13 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center justify-between">
         <button
           onClick={toggleMenu}
-          className="text-white text-2xl focus:outline-none"
+          className="text-white  text-2xl focus:outline-none"
         >
           {isOpen ? "×" : "☰"}
         </button>
 
         {isOpen && (
-          <ul className="absolute top-13 left-0 w-full text-center p-4">
+          <ul className="absolute bg-black  top-13 left-0 w-full text-center p-4">
             <li>
               <NavLink
                 to="/"

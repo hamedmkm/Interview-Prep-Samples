@@ -18,7 +18,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="tabs-container">
+    <div className="tabs-container absolute top-60 left-0">
       {/* تب‌ها */}
       <div className="tabs">
         <button
