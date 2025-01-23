@@ -22,8 +22,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -36,8 +36,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -50,8 +50,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -64,8 +64,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -78,8 +78,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -92,8 +92,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -106,8 +106,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -120,8 +120,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
                 isActive
-                  ? "text-yellow-400 scale-105"
-                  : "hover:text-yellow-400 hover:scale-105"
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
               }`
             }
           >
@@ -156,8 +156,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -171,8 +171,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -186,8 +186,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -201,8 +201,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -216,8 +216,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -231,8 +231,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -246,8 +246,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >
@@ -261,8 +261,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
                     isActive
-                      ? "text-yellow-400 scale-105"
-                      : "hover:text-yellow-400 hover:scale-105"
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
                   }`
                 }
               >

@@ -38,7 +38,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 min-h-80 bg-white rounded-xl shadow-2xl mt-60">
+    <div className="max-w-md mx-auto w-[95%] p-6 min-h-80 bg-white rounded-xl shadow-2xl mt-40">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">RegistrationForm </h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-6">
