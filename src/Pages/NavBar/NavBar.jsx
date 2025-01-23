@@ -128,6 +128,21 @@ const Navbar = () => {
             RegistrationForm
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/ImageGallery"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
+                isActive
+                  ? "text-yellow-400 scale-105 border-r-2"
+                  : "hover:text-yellow-400 hover:scale-105 border-r-2"
+              }`
+            }
+          >
+            Gallery
+          </NavLink>
+        </li>
       </ul>
 
       {/* Mobile Menu */}
@@ -267,6 +282,21 @@ const Navbar = () => {
                 }
               >
                 RegistrationForm
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/ImageGallery"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `text-white font-semibold text-lg px-4 py-2 block transition duration-300 ease-in-out transform ${
+                    isActive
+                      ? "text-yellow-400 scale-105 border-r-2"
+                      : "hover:text-yellow-400 hover:scale-105 border-r-2"
+                  }`
+                }
+              >
+                ImageGallery
               </NavLink>
             </li>
           </ul>
