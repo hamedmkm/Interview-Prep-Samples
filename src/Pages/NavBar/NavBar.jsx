@@ -109,6 +109,20 @@ const Navbar = () => {
             UsersList
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/RegistrationForm"
+            className={({ isActive }) =>
+              `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
+                isActive
+                  ? "text-yellow-400 scale-105"
+                  : "hover:text-yellow-400 hover:scale-105"
+              }`
+            }
+          >
+            RegistrationForm
+          </NavLink>
+          </li>
       </ul>
 
       {/* Mobile Menu */}
@@ -218,6 +232,20 @@ const Navbar = () => {
             }
           >
             UsersList
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/RegistrationForm"
+            className={({ isActive }) =>
+              `text-white font-semibold text-lg px-4 py-2 rounded-lg transition duration-300 ease-in-out transform ${
+                isActive
+                  ? "text-yellow-400 scale-105"
+                  : "hover:text-yellow-400 hover:scale-105"
+              }`
+            }
+          >
+            RegistrationForm
           </NavLink>
         </li>
           </ul>
