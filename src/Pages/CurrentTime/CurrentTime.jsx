@@ -16,28 +16,25 @@ const CurrentTime = () => {
 
   const formattedTime = currentDateTime.toLocaleTimeString();
 
-  // فرمت کردن تاریخ به میلادی یا شمسی
   const formattedDate = isJalali
-    ? moment(currentDateTime).format('jYYYY/jMM/jDD') // تاریخ شمسی
-    : currentDateTime.toLocaleDateString(); // تاریخ میلادی
+    ? moment(currentDateTime).format('jYYYY/jMM/jDD') 
+    : currentDateTime.toLocaleDateString();   
 
-  // تابع تغییر وضعیت تاریخ
   const toggleDateFormat = () => {
     setIsJalali(!isJalali);
   };
 
-  // فرمت کردن تاریخ به صورت جداگانه برای روز، ماه و سال
   const formattedDay = isJalali
-    ? moment(currentDateTime).format('jD') // روز شمسی
-    : currentDateTime.toLocaleDateString('en-US', { day: '2-digit' }); // روز میلادی
+    ? moment(currentDateTime).format('jD')   
+    : currentDateTime.toLocaleDateString('en-US', { day: '2-digit' });   
 
   const formattedMonth = isJalali
-    ? moment(currentDateTime).format('jMMMM') // ماه شمسی
-    : currentDateTime.toLocaleDateString('en-US', { month: 'long' }); // ماه میلادی
+    ? moment(currentDateTime).format('jMMMM')   
+    : currentDateTime.toLocaleDateString('en-US', { month: 'long' });   
 
   const formattedYear = isJalali
-    ? moment(currentDateTime).format('jYYYY') // سال شمسی
-    : currentDateTime.getFullYear(); // سال میلادی
+    ? moment(currentDateTime).format('jYYYY')   
+    : currentDateTime.getFullYear();
 
   return (
     <div className="flex flex-col  items-center justify-center min-h-screen  p-6 rounded-lg shadow-2xl ">
@@ -47,7 +44,7 @@ const CurrentTime = () => {
       >
         نمایش تاریخ {isJalali ? 'میلادی' : 'شمسی'}
       </button>
-      <h2 className="text-4xl text-black mb-4 animate-fade-in-up font-extrabold">تاریخ و زمان جاری</h2>
+      <h2 className="text-4xl text-white mb-4 animate-fade-in-up font-extrabold">تاریخ و زمان جاری</h2>
 
       <p className="text-4xl font-bold text-white animate-bounce-in">{formattedTime}</p>
       {/* جدول تاریخ با حاشیه‌های گریدینت */}
