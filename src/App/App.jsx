@@ -13,6 +13,7 @@ import Time from "../Pages/Time/Time";
 import Weather from "../Pages/Weather/Weather";
 import RandomQuote from "../Pages/RandomQuote/RandomQuote";
 import VisitorCounter from "../Pages/VisitorCounter/VisitorCounter";
+import CurrentTime from "../Pages/CurrentTime/CurrentTime";
 
 
 
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/Weather" element={<Weather />} />
           <Route path="/RandomQuote" element={<RandomQuote />} />
           <Route path="/VisitorCounter" element={<VisitorCounter />} />
+          <Route path="/CurrentTime" element={<CurrentTime />} />
         </Routes>
       </div>
     </Router>
