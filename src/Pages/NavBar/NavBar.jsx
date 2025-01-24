@@ -29,6 +29,7 @@ const Navbar = () => {
     { path: "/VisitorCounter", name: "VisitorCounter" },
     { path: "/CurrentTime", name: "Time" },
     { path: "/poll", name: "poll" },
+    { path: "/MusicPlayer", name: "MusicPlayer" },
   ];
 
   const navLinkClasses = ({ isActive }) =>
