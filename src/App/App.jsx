@@ -12,6 +12,7 @@ import ImageGallery from "../Pages/GetGallaryAPI/ImageGallery";
 import Time from "../Pages/Time/Time";
 import Weather from "../Pages/Weather/Weather";
 import RandomQuote from "../Pages/RandomQuote/RandomQuote";
+import VisitorCounter from "../Pages/VisitorCounter/VisitorCounter";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/Time" element={<Time />} />
           <Route path="/Weather" element={<Weather />} />
           <Route path="/RandomQuote" element={<RandomQuote />} />
+          <Route path="/VisitorCounter" element={<VisitorCounter />} />
         </Routes>
       </div>
     </Router>

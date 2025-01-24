@@ -26,6 +26,7 @@ const Navbar = () => {
     { path: "/Time", name: "Timer" },
     { path: "/Weather", name: "Weather" },
     { path: "/RandomQuote", name: "RandomQuote" },
+    { path: "/VisitorCounter", name: "VisitorCounter" },
   ];
 
   const navLinkClasses = ({ isActive }) =>
