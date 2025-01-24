@@ -1,129 +1,158 @@
 @import "tailwindcss";
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateX(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animate-fade-in {
-    animation: fade-in 0.5s ease-in-out forwards;
+  animation: fade-in 0.5s ease-in-out forwards;
 }
 
 .animate-fade-in-up {
-    animation: fade-in-up 0.5s ease-in-out forwards;
+  animation: fade-in-up 0.5s ease-in-out forwards;
 }
 
 .animate-slide-in {
-    animation: slide-in 0.5s ease-in-out forwards;
+  animation: slide-in 0.5s ease-in-out forwards;
 }
 .tabs-container {
   width: 100%;
   max-width: 800px;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;   
-       /* تنظیم متن به صورت مرکز برای زیبایی بیشتر */
+  text-align: center;
+  /* تنظیم متن به صورت مرکز برای زیبایی بیشتر */
 }
 
-  
-  .tabs {
-    display: flex;
-    border-bottom: 2px solid #ffffff54;
-    margin-bottom: 20px;
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ffffff54;
+  margin-bottom: 20px;
 
-    justify-content: center;   /* مرکز کردن افقی */
-    align-items: center;       /* مرکز کردن عمودی */
+  justify-content: center; /* مرکز کردن افقی */
+  align-items: center; /* مرکز کردن عمودی */
 
-    margin: 0;  
+  margin: 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: color 0.3s, border-color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+.tab:hover {
+  color: #edfe02;
+}
+
+.tab.active {
+  color: #edfe02;
+  border-bottom: 2px solid #edfe02;
+}
+
+.tab.active::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #edfe02;
+}
+
+.tab-content {
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #0222f3;
+  border-top: none;
+}
+@layer utilities {
+  /* برای اسکرولبار */
+  ::-webkit-scrollbar {
+    width: 5px;
   }
-  
-  .tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    transition: color 0.3s, border-color 0.3s;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    position: relative;
+
+  /* برای دستگیره (thumb) اسکرول */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 86, 86); /* رنگ دستگیره */
+    border-radius: 10px;
+    width: 5px;
   }
-  
-  .tab:hover {
-    color: #edfe02;
+
+  /* برای پس‌زمینه اسکرول */
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    border-radius: 10px;
   }
-  
-  .tab.active {
-    color: #edfe02;
-    border-bottom: 2px solid #edfe02;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
   }
-  
-  .tab.active::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 2px;
-    background-color: #edfe02;
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
   }
-  
-  .tab-content {
-    font-size: 18px;
-    color: #333;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #0222f3;
-    border-top: none;
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
-  @layer utilities {
-    /* برای اسکرولبار */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-  
-    /* برای دستگیره (thumb) اسکرول */
-    ::-webkit-scrollbar-thumb {
-      background-color: rgb(88, 86, 86); /* رنگ دستگیره */
-      border-radius: 10px;
-      width: 5px;
-    }
-  
-    /* برای پس‌زمینه اسکرول */
-    ::-webkit-scrollbar-track {
-      background: #2d2d2d;
-      border-radius: 10px;
-    }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease-out;
+}
+
+.spin-slow {
+  animation: spin 3s linear infinite;
+}

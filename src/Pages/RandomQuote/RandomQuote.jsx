@@ -1,4 +1,7 @@
+
+  
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const RandomQuote = () => {
   const quotes = [
@@ -74,6 +77,7 @@ const RandomQuote = () => {
     "هرگز به خاطر چیزی که نمی‌توانی تغییر دهی، خشمگین نباش.",
    ]
 
+
   const [currentQuote, setCurrentQuote] = useState("");
 
   const generateRandomQuote = () => {
@@ -82,18 +86,31 @@ const RandomQuote = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  p-6">
-    <div className="bg-white border border-gray-300 shadow-xl rounded-lg p-8 max-w-md text-center">
-      <p className="text-xl font-medium italic text-gray-800 mb-6">{currentQuote || 'روی دکمه کلیک کنید تا نقل‌قولی نمایش داده شود.'}</p>
-      <button
-        onClick={generateRandomQuote}
-        className="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 active:scale-95 transition-transform duration-200"
+    <div className="flex flex-col items-center justify-center min-h-screen  text-white p-6">
+      <motion.div
+        className="bg-white text-gray-800 rounded-lg shadow-2xl p-8 max-w-md text-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        نقل‌قول تصادفی
-      </button>
+        <motion.p
+          className="text-2xl font-semibold italic mb-6"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          {currentQuote || "روی دکمه کلیک کنید تا نقل‌قولی نمایش داده شود."}
+        </motion.p>
+        <motion.button
+          onClick={generateRandomQuote}
+          className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          نقل‌قول تصادفی
+        </motion.button>
+      </motion.div>
     </div>
-  </div>
-  
   );
 };
 
