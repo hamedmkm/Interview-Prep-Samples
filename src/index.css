@@ -107,4 +107,23 @@
     border: 1px solid #0222f3;
     border-top: none;
   }
+  @layer utilities {
+    /* برای اسکرولبار */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+  
+    /* برای دستگیره (thumb) اسکرول */
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(88, 86, 86); /* رنگ دستگیره */
+      border-radius: 10px;
+      width: 5px;
+    }
+  
+    /* برای پس‌زمینه اسکرول */
+    ::-webkit-scrollbar-track {
+      background: #2d2d2d;
+      border-radius: 10px;
+    }
+  }
   

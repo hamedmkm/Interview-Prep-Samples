@@ -10,6 +10,8 @@ import UsersList from "../Pages/GetAPi/GetAPIUserList";
 import RegistrationForm from "../Pages/RegisterisionEmail/RegisterisionEmail";
 import ImageGallery from "../Pages/GetGallaryAPI/ImageGallery";
 import Time from "../Pages/Time/Time";
+import Weather from "../Pages/Weather/Weather";
+import RandomQuote from "../Pages/RandomQuote/RandomQuote";
 
 
 
@@ -31,6 +33,8 @@ const App = () => {
           <Route path="/RegistrationForm" element={<RegistrationForm />} />
           <Route path="/ImageGallery" element={<ImageGallery />} />
           <Route path="/Time" element={<Time />} />
+          <Route path="/Weather" element={<Weather />} />
+          <Route path="/RandomQuote" element={<RandomQuote />} />
         </Routes>
       </div>
     </Router>

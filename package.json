@@ -14,6 +14,7 @@
     "axios": "^1.7.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-horizontal-scrolling-menu": "^8.2.0",
     "react-router-dom": "^6.28.2",
     "tailwindcss": "^4.0.0"
   },

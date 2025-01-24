@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const Time = () => {
-  // وضعیت‌های ماشین‌حساب
   const [input, setInput] = useState('');
   const [result, setResult] = useState(null);
 
-  // وضعیت‌های تایمر
+
   const [timeLeft, setTimeLeft] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
-  // وضعیت نمایش ماشین‌حساب و تایمر
+
   const [showCalculator, setShowCalculator] = useState(true);
   const [showTimer, setShowTimer] = useState(false);
 
-  // مدیریت ورودی ماشین‌حساب
   const handleButtonClick = (value) => {
     setInput((prevInput) => prevInput + value);
   };
@@ -31,10 +29,14 @@ const Time = () => {
     }
   };
 
-  // مدیریت تایمر
+
   const handleStartTimer = (seconds) => {
     setTimeLeft(seconds);
     setIsRunning(true);
+  };
+
+  const handleToggleTimer = () => {
+    setIsRunning((prev) => !prev);
   };
 
   useEffect(() => {
@@ -51,8 +53,7 @@ const Time = () => {
   }, [isRunning, timeLeft]);
 
   return (
-    <div className="max-w-4xl mx-auto p-8 w-[90%]  rounded-xl shadow-lg">
-      {/* دکمه‌های نمایش/مخفی کردن ماشین‌حساب و تایمر */}
+    <div className="max-w-4xl mx-auto p-8 w-[90%] rounded-xl shadow-lg">
       <div className="mb-6 text-center">
         <button
           onClick={() => setShowCalculator((prev) => !prev)}
@@ -92,7 +93,7 @@ const Time = () => {
               onClick={handleClear}
               className="col-span-4 py-4 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300"
             >
-            C
+              C
             </button>
           </div>
           {result !== null && <div className="mt-4 text-center text-xl font-bold text-gray-800">result: {result}</div>}
@@ -114,12 +115,22 @@ const Time = () => {
               </button>
             ))}
           </div>
-          <div className="text-center text-xl">
+          <div className="text-center text-xl mb-4">
             {isRunning ? (
               <span className="text-green-600">زمان باقی‌مانده: {timeLeft} ثانیه</span>
             ) : (
               <span className="text-red-600">تایمر متوقف است</span>
             )}
+          </div>
+          <div className="text-center">
+            <button
+              onClick={handleToggleTimer}
+              className={`py-2 px-6 rounded-lg text-white ${
+                isRunning ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-500 hover:bg-blue-600'
+              } transition duration-300`}
+            >
+              {isRunning ? 'توقف' : 'شروع'}
+            </button>
           </div>
         </div>
       )}
