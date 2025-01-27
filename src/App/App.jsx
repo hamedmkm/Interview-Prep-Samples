@@ -16,38 +16,44 @@ import VisitorCounter from "../Pages/VisitorCounter/VisitorCounter";
 import CurrentTime from "../Pages/CurrentTime/CurrentTime";
 import Poll from "../Pages/Poll/Poll";
 import MusicPlayer from "../Pages/Music/MusicList";
-
-
-
+import YouTubeSearch from "../Pages/YoutubeSearch/YoutubeSearch";
+import MyGoogleMap from "../Pages/googleMap/GoogleMap";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-700 to-gray-400">
-    <Router>
-      <Navbar />
-      <div className=" mx-auto mt-4 ">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/SumNumberComponent" element={<SumNumberComponent />} />
-          <Route path="/TodoList" element={<TodoList />} />
-          <Route path="/NameFilter" element={<NameFilter />} />
-          <Route path="/Tabs" element={<Tabs />} />
-          <Route path="/Loader" element={<Loader />} />
-          <Route path="/UsersList" element={<UsersList />} />
-          <Route path="/RegistrationForm" element={<RegistrationForm />} />
-          <Route path="/ImageGallery" element={<ImageGallery />} />
-          <Route path="/Time" element={<Time />} />
-          <Route path="/Weather" element={<Weather />} />
-          <Route path="/RandomQuote" element={<RandomQuote />} />
-          <Route path="/VisitorCounter" element={<VisitorCounter />} />
-          <Route path="/CurrentTime" element={<CurrentTime />} />
-          <Route path="/poll" element={<Poll />} />
-          <Route path="/MusicPlayer" element={<MusicPlayer />} />
-
-        </Routes>
+      <Router>
+        <Navbar />
+        <div className=" mx-auto mt-4 ">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/SumNumberComponent"
+              element={<SumNumberComponent />}
+            />
+                <Route path="/YouTubeSearch" element={<YouTubeSearch />} />
+            <Route path="/MyGoogleMap" element={<MyGoogleMap />} />
+            <Route path="/Weather" element={<Weather />} />
+            <Route path="/NameFilter" element={<NameFilter />} />
+            <Route path="/TodoList" element={<TodoList />} />
+            <Route path="/UsersList" element={<UsersList />} />
+            <Route path="/RegistrationForm" element={<RegistrationForm />} />
+            
+            <Route path="/Tabs" element={<Tabs />} />
+            <Route path="/Loader" element={<Loader />} />
+         
+            <Route path="/ImageGallery" element={<ImageGallery />} />
+            <Route path="/Time" element={<Time />} />
+         
+            <Route path="/RandomQuote" element={<RandomQuote />} />
         
-      </div>
-    </Router>
+            <Route path="/CurrentTime" element={<CurrentTime />} />
+            <Route path="/poll" element={<Poll />} />
+            <Route path="/MusicPlayer" element={<MusicPlayer />} />
+        
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 };

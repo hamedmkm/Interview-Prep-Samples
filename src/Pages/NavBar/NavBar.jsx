@@ -30,6 +30,8 @@ const Navbar = () => {
     { path: "/CurrentTime", name: "Time" },
     { path: "/poll", name: "poll" },
     { path: "/MusicPlayer", name: "MusicPlayer" },
+    { path: "/YouTubeSearch", name: "YouTubeSearch" },
+    { path: "/MyGoogleMap", name: "google map" },
   ];
 
   const navLinkClasses = ({ isActive }) =>
@@ -66,7 +68,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li
               key={item.path}
-              className="transition-transform duration-500 ease-in-out hover:scale-110"
+              className="transition-transform whitespace-nowrap duration-500 ease-in-out hover:scale-110"
             >
               <NavLink to={item.path} className={navLinkClasses}>
                 {item.name}
@@ -96,7 +98,7 @@ const Navbar = () => {
         )}
 
         {isOpen && (
-          <ul className="absolute bg-black top-14 left-0 w-full text-center p-4 z-20">
+          <ul className="absolute whitespace-nowrap bg-black top-14 left-0 w-full text-center p-4 z-20">
             {navItems.map((item) => (
               <li key={item.path}>
                 <NavLink
