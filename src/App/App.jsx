@@ -42,12 +42,16 @@ const App = () => {
             <Route path="/Tabs" element={<Tabs />} />
             <Route path="/Loader" element={<Loader />} />
             <Route path="/ImageGallery" element={<ImageGallery />} />
+            <Route path="/VisitorCounter" element={<VisitorCounter />} />
             <Route path="/Time" element={<Time />} />
             <Route path="/CurrentTime" element={<CurrentTime />} />
             <Route path="/poll" element={<Poll />} />
             <Route path="/MusicPlayer" element={<MusicPlayer />} />
           </Routes>
         </div>
+        <div className="text-center py-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-100 z-50 shadow-md border-b border-gray-600 ">
+ © 2025 Hamed Nourzaie All rights reserved.
+</div>
       </Router>
     </div>
   );

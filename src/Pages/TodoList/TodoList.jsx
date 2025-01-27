@@ -19,9 +19,10 @@ function TodoList() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center  p-6">
-      <div className=" shadow-lg bg-white rounded-lg p-6 w-full max-w-md">
-        <h1 className="text-2xl  font-bold text-gray-800 mb-4 text-center">
+    <div className="min-h-screen flex items-center text-gray-100
+     justify-center  p-6">
+      <div className=" shadow-lg bg-gradient-to-r from-gray-900 to-cyan-800 rounded-lg p-6 w-full max-w-md">
+        <h1 className="text-2xl  font-bold text-gray-200 mb-4 text-center">
 Todo List        </h1>
         <div className="flex mb-4">
         <button

@@ -88,7 +88,7 @@ const RandomQuote = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  text-white p-6">
       <motion.div
-        className="bg-white text-gray-800 rounded-lg shadow-2xl p-8 max-w-md text-center"
+        className="bg-gradient-to-r from-gray-900 to-cyan-800 text-gray-200 rounded-lg shadow-2xl p-8 max-w-md text-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}

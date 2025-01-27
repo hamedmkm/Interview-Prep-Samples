@@ -35,7 +35,7 @@ const Weather = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-white p-4">
+    <div className="flex  flex-col items-center justify-center min-h-screen  text-white p-4">
       <h2 className="text-4xl font-extrabold mb-8 animate-fade-in">
         وضعیت آب‌وهوا
       </h2>

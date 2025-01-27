@@ -12,8 +12,8 @@ const SumNumberComponent = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center  p-6">
-            <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
-                <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center animate-fade-in">
+            <div className="bg-gradient-to-r from-gray-900 to-cyan-800 shadow-lg rounded-lg p-6 w-full max-w-md">
+                <h1 className="text-2xl font-bold text-gray-100 mb-4 text-center animate-fade-in">
                     Sum Calculator
                 </h1>
                 <ul className="flex justify-between items-center mb-6">
@@ -32,7 +32,7 @@ const SumNumberComponent = () => {
                         type="number"
                         placeholder="Enter a number"
                         onChange={(e) => setYourNumber(Number(e.target.value))}
-                        className="w-full p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 text-gray-100 focus:ring-blue-500"
                     />
                 </div>
                 <button
@@ -42,7 +42,7 @@ const SumNumberComponent = () => {
                     Calculate
                 </button>
                 <p
-                    className="text-center text-xl font-bold text-gray-800 mt-6 animate-fade-in-up"
+                    className="text-center text-xl font-bold text-gray-100 mt-6 animate-fade-in-up"
                     style={{ animationDelay: "0.5s" }}
                 >
                     Sum of all numbers:{" "}

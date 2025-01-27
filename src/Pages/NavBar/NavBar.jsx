@@ -81,14 +81,14 @@ const Navbar = () => {
       </div>
 
       {/* منوی موبایل */}
-      <div className="lg:hidden flex items-center justify-between">
+      <div className="lg:hidden flex items-center ">
         <button
           onClick={toggleMenu}
           className="text-white text-2xl focus:outline-none"
         >
           {isOpen ? "×" : "☰"}
         </button>
-
+<h1 className="">hamednourzaie!</h1>
         {/* پس‌زمینه تاریک */}
         {isOpen && (
           <div
