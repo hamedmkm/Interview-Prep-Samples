@@ -31,26 +31,21 @@ const App = () => {
               path="/SumNumberComponent"
               element={<SumNumberComponent />}
             />
-                <Route path="/YouTubeSearch" element={<YouTubeSearch />} />
+            <Route path="/YouTubeSearch" element={<YouTubeSearch />} />
             <Route path="/MyGoogleMap" element={<MyGoogleMap />} />
             <Route path="/Weather" element={<Weather />} />
+            <Route path="/RandomQuote" element={<RandomQuote />} />
             <Route path="/NameFilter" element={<NameFilter />} />
             <Route path="/TodoList" element={<TodoList />} />
             <Route path="/UsersList" element={<UsersList />} />
             <Route path="/RegistrationForm" element={<RegistrationForm />} />
-            
             <Route path="/Tabs" element={<Tabs />} />
             <Route path="/Loader" element={<Loader />} />
-         
             <Route path="/ImageGallery" element={<ImageGallery />} />
             <Route path="/Time" element={<Time />} />
-         
-            <Route path="/RandomQuote" element={<RandomQuote />} />
-        
             <Route path="/CurrentTime" element={<CurrentTime />} />
             <Route path="/poll" element={<Poll />} />
             <Route path="/MusicPlayer" element={<MusicPlayer />} />
-        
           </Routes>
         </div>
       </Router>

@@ -15,23 +15,23 @@ const Navbar = () => {
 
   const navItems = [
     { path: "/", name: "Home" },
+    { path: "/YouTubeSearch", name: "YouTubeSearch" },
+    { path: "/MyGoogleMap", name: "google map" },
     { path: "/NameFilter", name: "NameFilter" },
-    { path: "/TodoList", name: "TodoList" },
-    { path: "/SumNumberComponent", name: "SumNumber" },
-    { path: "/Tabs", name: "Tabs" },
-    { path: "/Loader", name: "Loader" },
-    { path: "/UsersList", name: "UsersList" },
-    { path: "/RegistrationForm", name: "RegistrationForm" },
-    { path: "/ImageGallery", name: "Gallery" },
+    { path: "/VisitorCounter", name: "VisitorCounter" },
     { path: "/Time", name: "Timer" },
     { path: "/Weather", name: "Weather" },
     { path: "/RandomQuote", name: "RandomQuote" },
-    { path: "/VisitorCounter", name: "VisitorCounter" },
     { path: "/CurrentTime", name: "Time" },
+    { path: "/TodoList", name: "TodoList" },
+    { path: "/UsersList", name: "UsersList" },
+    { path: "/SumNumberComponent", name: "SumNumber" },
+    { path: "/Tabs", name: "Tabs" },
+    { path: "/Loader", name: "Loader" },
+    { path: "/RegistrationForm", name: "RegistrationForm" },
+    { path: "/ImageGallery", name: "Gallery" },
     { path: "/poll", name: "poll" },
     { path: "/MusicPlayer", name: "MusicPlayer" },
-    { path: "/YouTubeSearch", name: "YouTubeSearch" },
-    { path: "/MyGoogleMap", name: "google map" },
   ];
 
   const navLinkClasses = ({ isActive }) =>

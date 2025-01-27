@@ -4,14 +4,12 @@ import axios from "axios";
 const YouTubeSearch = () => {
   const [keyword, setKeyword] = useState("");
   const [videos, setVideos] = useState([]);
-  const API_KEY = "AIzaSyASe3lcavJbGd-yFS9UXJOKjnKrYXRpXLE"; // کلید API یوتیوب را جایگزین کنید
+  const API_KEY = "AIzaSyASe3lcavJbGd-yFS9UXJOKjnKrYXRpXLE"; 
 
-  // تابع جستجو
   const handleSearch = async () => {
     if (!keyword) return;
 
     try {
-      // گرفتن لیست ویدیوها
       const searchResponse = await axios.get(
         `https://www.googleapis.com/youtube/v3/search`,
         {
@@ -28,7 +26,6 @@ const YouTubeSearch = () => {
         .map((item) => item.id.videoId)
         .join(",");
 
-      // گرفتن جزئیات ویدیوها
       const videoDetailsResponse = await axios.get(
         `https://www.googleapis.com/youtube/v3/videos`,
         {
@@ -46,7 +43,7 @@ const YouTubeSearch = () => {
     }
   };
 
-  // هندلر برای تشخیص فشار دادن کلید Enter
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleSearch();
